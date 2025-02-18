@@ -19,15 +19,16 @@ This project is a **Number Plate Recognition System** that utilizes **OpenCV, Ke
 ## 📂 Project Structure
 ```
 📦 Number-Plate-Recognition-System
- ┣ 📂 data
- ┃ ┣ 📂 train  # Training dataset
- ┃ ┗ 📂 val    # Validation dataset
- ┣ 📂 models  # Contains trained models
- ┣ 📂 haarcascades  # Haar cascade files for plate detection
- ┣ 📜 Number_Plate_Recognition.ipynb  # Main script
- ┣ 📜 trained_model.h5  # Saved trained model
- ┣ 📜 test.ipynb  # testing model
- ┗ 📜 README.md  # Project documentation
+├── 📁 data
+│   ├── 📁 train          # Training dataset
+│   └── 📁 val            # Validation dataset
+├── 📁 models             # Contains trained models
+├── 📁 haarcascades       # Haar cascade files for plate detection
+├── 📄 Number_Plate_Recognition.ipynb   # Main detection script
+├── 📄 trained_model.h5   # Saved trained model
+├── 📄 test.ipynb         # Testing script
+└── 📄 README.md          # Project documentation 
+
 ```
 
 ## 🔄 Workflow
