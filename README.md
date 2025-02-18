@@ -24,8 +24,9 @@ This project is a **Number Plate Recognition System** that utilizes **OpenCV, Ke
  ┃ ┗ 📂 val    # Validation dataset
  ┣ 📂 models  # Contains trained models
  ┣ 📂 haarcascades  # Haar cascade files for plate detection
- ┣ 📜 numberplate_recognition.py  # Main script
+ ┣ 📜 Number_Plate_Recognition.ipynb  # Main script
  ┣ 📜 trained_model.h5  # Saved trained model
+ ┣ 📜 test.ipynb  # testing model
  ┗ 📜 README.md  # Project documentation
 ```
 
@@ -102,7 +103,11 @@ The model achieved **97.69% accuracy**. Future improvements could include traini
 Feel free to fork the repo, raise issues, or contribute by adding new features!
 
 ---
-✉️ **Contact:** [Shubham Singla](https://github.com/Shubham-Singla259)
+✉️ **Contact:**  
+[Shubham Singla (GitHub)](https://github.com/Shubham-Singla259)  
+[Shubham Singla (LinkedIn)](https://www.linkedin.com/in/shubham-singla-b19003256/)
+
+
 
 
 
