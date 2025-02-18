@@ -1,2 +1,108 @@
-# Number-Plate-Recognition-System
-A Number Plate Recognition system using CNN detects and reads vehicle number plates from images. The model, trained on a number plate dataset, extracts characters in different orientations and lighting conditions. It is useful in traffic monitoring, vehicle identification, and security applications.
+# Number Plate Recognition System
+
+## 📌 Overview
+This project is a **Number Plate Recognition System** that utilizes **OpenCV, Keras, and TensorFlow** to detect, extract, and recognize vehicle license plates. The system first detects the number plate using **Haar Cascade Classifier**, processes the plate image, and then classifies individual characters using a **Convolutional Neural Network (CNN)**.
+
+<p align="center">
+  <img src="Capture.JPG" alt="Result Image">
+</p>
+
+
+## 🛠 Technologies Used
+- **Python**
+- **OpenCV** (for image processing and plate detection)
+- **Keras & TensorFlow** (for building and training the CNN model)
+- **NumPy & Pandas** (for data handling)
+- **Matplotlib** (for visualization)
+- **scikit-learn** (for model evaluation)
+
+## 📂 Project Structure
+```
+📦 Number-Plate-Recognition-System
+ ┣ 📂 data
+ ┃ ┣ 📂 train  # Training dataset
+ ┃ ┗ 📂 val    # Validation dataset
+ ┣ 📂 models  # Contains trained models
+ ┣ 📂 haarcascades  # Haar cascade files for plate detection
+ ┣ 📜 numberplate_recognition.py  # Main script
+ ┣ 📜 trained_model.h5  # Saved trained model
+ ┗ 📜 README.md  # Project documentation
+```
+
+## 🔄 Workflow
+1. **Load Image & Preprocess**
+   - Read the image using OpenCV.
+   - Convert it to grayscale.
+   - Apply Haar Cascade to detect the number plate.
+   - Crop and preprocess the detected plate.
+
+2. **Character Segmentation**
+   - Apply thresholding, erosion, and dilation to clean the image.
+   - Find contours of characters.
+   - Extract individual character images.
+
+3. **Character Recognition**
+   - Resize characters to 28x28.
+   - Feed them into a trained CNN model.
+   - Predict and decode the characters into a readable format.
+
+4. **Model Training**
+   - CNN architecture with Conv2D, MaxPooling, Dropout, and Dense layers.
+   - Uses categorical cross-entropy loss and Adam optimizer.
+   - Trained using **ImageDataGenerator** for data augmentation.
+
+5. **Evaluation & Performance Metrics**
+   - Evaluate accuracy using a validation dataset.
+   - Display confusion matrix and classification report.
+
+## 📊 Flowchart
+```mermaid
+graph TD;
+    A[Input Image] -->|Convert to Grayscale| B[Preprocessing]
+    B -->|Apply Haar Cascade| C[Detect Number Plate]
+    C -->|Crop & Process Image| D[Thresholding & Filtering]
+    D -->|Find Contours| E[Character Segmentation]
+    E -->|Resize & Normalize| F[CNN Model Prediction]
+    F -->|Decode Characters| G[Extracted Plate Number]
+    G -->|Display Output| H[Final Recognized Number]
+```
+
+## 🚀 How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shubham-Singla259/Number-Plate-Recognition-System.git
+   cd Number-Plate-Recognition-System
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the detection script:
+   ```bash
+   python Number_Plate_Recognition.ipynb
+   ```
+
+## 📈 Results
+- Achieved **high accuracy** using CNN model.
+- Successfully detects and recognizes Indian number plates.
+- Robust against different lighting conditions and angles.
+
+![Result Image](output.png)
+
+
+The model achieved **97.69% accuracy**. Future improvements could include training with a larger dataset, improving character segmentation, and fine-tuning the model architecture for better generalization.
+
+
+## 🏆 Future Improvements
+- Improve OCR accuracy using advanced deep learning models.
+- Add real-time detection using live camera feed.
+- Support for multiple languages and number plate formats.
+
+## 🤝 Contributing
+Feel free to fork the repo, raise issues, or contribute by adding new features!
+
+---
+✉️ **Contact:** [Shubham Singla](https://github.com/Shubham-Singla259)
+
+
+
