@@ -16,6 +16,15 @@ This project is a **Number Plate Recognition System** that utilizes **OpenCV, Ke
 - **Matplotlib** (for visualization)
 - **scikit-learn** (for model evaluation)
 
+## 📊 Dataset
+The dataset used for training the **Number Plate Recognition System** consists of individual character images. 
+
+- **Character Dataset**:  
+   - Contains individual characters (A-Z, 0-9) extracted from number plates.  
+   - Each character is stored as a grayscale image of size **28x28 pixels**.  
+   - Used for training the **CNN model** to recognize letters and digits.
+
+
 ## 📂 Project Structure
 ```
 📦 Number-Plate-Recognition-System
@@ -126,6 +135,22 @@ Feel free to fork the repo, raise issues, or contribute by adding new features!
 ✉️ **Contact:**  
 [Shubham Singla (GitHub)](https://github.com/Shubham-Singla259)  
 [Shubham Singla (LinkedIn)](https://www.linkedin.com/in/shubham-singla-b19003256/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
